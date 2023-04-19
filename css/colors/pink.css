@@ -1,4 +1,4 @@
-/* default color: rgb(194, 169, 27)  */
+/* default color: rgb(255, 215, 0);  */
 .bg-color,
 section.bg-color,
 section.call-to-action,
@@ -60,7 +60,7 @@ span.overlay,
 a.btn-fullwidth,
 .de_testi.opt-3 blockquote:before
 {
-	background-color:rgb(194, 169, 27) ;
+	background-color:rgb(255, 215, 0); ;
 }
 
 .feature-box i,
@@ -118,7 +118,7 @@ h2.hs1 span,
 .countdown-s4 .countdown-period,
 .pricing-s1 .bottom ul li i
 {
-	color:rgb(194, 169, 27);
+	color:rgb(255, 215, 0);;
 }
 
 .feature-box i,
@@ -142,7 +142,7 @@ h2.hs1 span,
 .de_tab.tab_style_4 .de_nav
 {
 
-	border-color:rgb(194, 169, 27) ;
+	border-color:rgb(255, 215, 0); ;
 }
 
 .box-fx .inner,
@@ -159,11 +159,11 @@ h2.hs1 span,
 .text-light .separator span:after ,
 .form-underline input[type=text]:focus, .form-underline textarea:focus, .form-underline input[type=email]:focus, .form-underline select:focus
 {
-	border-bottom-color:rgb(194, 169, 27) ;
+	border-bottom-color:rgb(255, 215, 0); ;
 }
 
 .preloader1{
-	border-top-color:rgb(194, 169, 27) ;
+	border-top-color:rgb(255, 215, 0); ;
 }
 
 

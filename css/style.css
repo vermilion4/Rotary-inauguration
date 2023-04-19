@@ -1999,7 +1999,7 @@ h1.very-big {
 	font-weight:800;
 }
 h1.very-big.gold{
-	color: rgb(194, 169, 27);
+	color: rgb(255, 215, 0);;
 }
 h1.ultra-big {
 	font-size: 100px;
@@ -2287,7 +2287,7 @@ span.teaser {
 	color: #fff !important;
 }
 .de_light h1, .de_light h2, .de_light h3, .de_light h4, .de_light h5, .de_light h6 {
-	color: rgb(194, 169, 27);
+	color: rgb(255, 215, 0);;
 }
 
 .text-white{

@@ -1,12 +1,12 @@
 .orange{color:#ffa854;}
-.pink{color:rgb(194, 169, 27);}
+.pink{color:rgb(255, 215, 0);;}
 .purple{color:#694c8b;}
 .purple-dark{color:#383069;}
 
 .bg-white{background:#1f1f1ffff;}
-.bg-orange{background-color:rgb(194, 169, 27);}
+.bg-orange{background-color:rgb(255, 215, 0);;}
 .bg-pink{background-color:#1f1f1f;}
-.bg-purple{background-color:rgb(194, 169, 27);}
+.bg-purple{background-color:rgb(255, 215, 0);;}
 .bg-purple-dark{background-color:#383069;}
 
 .countdown-s5 .countdown-section:nth-child(2n+2){
@@ -15,17 +15,17 @@
 
 .de_tab.tab_style_4 .de_nav li:nth-child(1n+1).active,
 .small-border{
-	background-color:rgb(194, 169, 27);
+	background-color:rgb(255, 215, 0);;
 }
 .de_tab.tab_style_4 .de_nav li:nth-child(2n+2).active, 
 .de_tab.tab_style_4 .de_nav li:nth-child(2n+2).active,
 .countdown-s5 .countdown-section:nth-child(3n+3){
-	background-color:rgb(194, 169, 27);
+	background-color:rgb(255, 215, 0);;
 }
 .de_tab.tab_style_4 .de_nav li:nth-child(3n+3).active, 
 .de_tab.tab_style_4 .de_nav li:nth-child(3n+3).active,
 .countdown-s5 .countdown-section{
-	background-color:rgb(194, 169, 27);
+	background-color:rgb(255, 215, 0);;
 }
 
 .countdown-s5 .countdown-section:nth-child(4n+4){
