@@ -105,6 +105,37 @@ body.boxed {
 .de-navbar-left #wrapper {
 	overflow: visible;
 }
+.overlay{
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0,0,0,0.5);
+	z-index: 9999;
+	display: none;
+}
+.modal {
+  position: fixed;
+  z-index: 5000;
+  top: 0;
+left: 0;
+overflow: hidden;
+
+  background-color: rgba(0, 0, 0, 0.5);
+  display: none;
+}
+.modal form{
+	position: fixed;
+  top: 50%;
+  left: 50%;
+	width: 50%;
+  transform: translate(-50%, -50%);
+	background: #fff;
+	padding: 3rem;
+	border-radius: 10px;
+
+}
 
 /* ================================================== */
 
@@ -2834,6 +2865,7 @@ span.teaser {
 	border-top: 0px;
 	padding-bottom: 5px;
 	text-align: center;
+
 }
 .pricing-s1 .bottom ul {
 	list-style: none;
@@ -2861,6 +2893,8 @@ span.teaser {
 	display:block;
 	margin: 40px;
 	width: auto;
+	background-color: #fff;
+	padding: 10px 0;
 }
 .pricing-s1 .bottom i {
 	margin-right: 10px;
