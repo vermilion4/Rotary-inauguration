@@ -2,11 +2,14 @@ var openModalBtns = document.querySelectorAll(".open-modal-btn");
 var modal = document.getElementById("modal");
 var amountField = document.getElementById("js-amount");
 
-// Loop through each button and attach click event listener
+//Loop through each button and attach click event listener
 openModalBtns.forEach(function(btn) {
   btn.addEventListener("click", function() {
       // Set the amount in the modal form to the data-amount attribute of the clicked button
-      amountField.value = this.dataset.amount;
+      // amountField.value = this.dataset.amount;
+      var amount = this.dataset.amount;
+      // Update the value of the "amount" input field in the modal
+      document.querySelector('input[name="amount"]').value = amount;
       modal.style.display = "block";
   });
 });

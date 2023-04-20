@@ -125,10 +125,11 @@ overflow: hidden;
   background-color: rgba(0, 0, 0, 0.5);
   display: none;
 }
-.modal form{
+.modal .form{
 	position: fixed;
   top: 50%;
   left: 50%;
+	color:#1f1f1f;
 	width: 50%;
   transform: translate(-50%, -50%);
 	background: #fff;
@@ -7038,6 +7039,9 @@ a, img {
 	}
 }
 @media only screen and (max-width: 992px) {
+	.modal .form{
+		width: 90%;
+	}
 	.text-center-sm {
 		text-align: center;
 	}
@@ -7075,7 +7079,7 @@ a, img {
 		padding: 0;
 		margin-top: 0;
 		height: auto;
-		background: #070402000;
+		background: #070402;
 		padding: 15px 0;
 	}
 	#de-sidebar {
@@ -7519,6 +7523,7 @@ a, img {
 	background-attachment:scroll !important;
 	background-position:top !important;
 	}
+}
 	
 
 
