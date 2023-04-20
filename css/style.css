@@ -7039,6 +7039,9 @@ a, img {
 	}
 }
 @media only screen and (max-width: 992px) {
+	#preloader{
+		background: url(../images/logo-small.png) center no-repeat #222222 !important;
+	}
 	.modal .form{
 		width: 90%;
 	}
