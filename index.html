@@ -85,7 +85,8 @@
 
             <div class="container">
                 <div class="row">
-                    <div class="col-md-12 header">
+                    <div class="col-md-12">
+                        <div class="header">
                         <!-- logo begin -->
                         <div id="logo">
                             <a href="index.html">
@@ -98,6 +99,7 @@
                         <!-- small button begin -->
                         <span id="menu-btn"></span>
                         <!-- small button close -->
+                    </div>
 
                         <!-- mainmenu begin -->
                         <nav>
@@ -126,47 +128,76 @@
             <div id="top"></div>
 
             <!-- section begin -->
-            <section id="section-intro" class="relative owl-slide-wrapper no-top no-bottom text-white"
+            <section id="section-intro" class="relative owl-slide-wrapper no-top no-bottom text-white full-height"
                 data-stellar-background-ratio=".2">
-                <div class="overlay-gradient">
+                <div class="overlay-gradient3">
+                    <div class="owl-slider-nav">
+                        <div class="next"></div>
+                        <div class="prev"></div>
+                    </div>
+
+                    <div id="custom-owl-slider" class="owl-slide" data-scroll-speed="2">
+                        <div class="item" style="display: block; justify-content: center; align-items: center; width: 100vw;">
+                            <img src="images/slider/1.jpg" alt="">
+                        </div>
+                        <div class="item" style="display: block; justify-content: center; align-items: center; width: 100vw;">
+                            <img src="images/slider/6.jpg" alt="">
+                        </div>
+                        <div class="item" style="display: block; justify-content: center; align-items: center; width: 100vw;">
+                            <img src="images/slider/5.jpg" alt="">
+                        </div>
+                    </div>
 
 
-
+                </div>
+                <div class="">
                     <div class="container" style="margin-top: 50px;">
                         <div class="row">
-                            <div class="header-background"
+                            <!-- <div class="header-background"
                                 style="display: flex; align-items: center; justify-content: space-between;">
                                 <div style="width: 40%">
                                     <img src="./images/gallery/2a.jpg" />
+                                </div> -->
+
+                            <div class="col-md-12 text-center">
+
+                                <div class="spacer-double"></div>
+                                <div class="spacer-double"></div>
+                                <h1 class="very-big gold">INSTALLATION OF THE<br>43RD<br>DISTRICT
+                                    GOVERNOR</h1>
+                                <h2 style="color:#FFB200">ROTARIAN IFEYINWA RITA EJEZIE</h2>
+                                <div class="spacer-single"></div>
+                                <div class="subtitle s2"><span><i class="fa fa-calendar-o orange"></i>July
+                                        15th</span><span><i class="fa fa-map-marker orange"></i>Grand Ballroom,
+                                        Oriental Hotel, Lagos.</span></div>
+                                <div>
+                                    <span><i class="fa fa-phone orange"></i> 0803 442 7766</span>&nbsp;&nbsp;
+                                    <span><i class="fa fa-phone orange"></i> 0803 303 0314</span>&nbsp;&nbsp;
+                                    <span><i class="fa fa-phone orange"></i> 0708 860 0582</span>
                                 </div>
                                 <div>
-                                    <div class="col-md-12 text-center">
+                                    <span><i class="fa fa-envelope orange"></i>
+                                        dgifys.installation@gmail.com</span>&nbsp;&nbsp;
+                                    <span><i class="fa fa-envelope orange"></i> okechukwu@domainname.com</span>
+                                </div>
 
-                                        <div class="spacer-double"></div>
-                                        <div class="spacer-double"></div>
-                                        <h1 class="very-big gold">INSTALLATION OF THE<br>43RD<br>DISTRICT
-                                            GOVERNOR</h1>
-                                        <h2 style="color:#FFB200">ROTARIAN IFEYINWA RITA EJEZIE</h2>
-                                        <div class="spacer-single"></div>
-                                        <div class="subtitle s2"><span><i class="fa fa-calendar-o orange"></i>July
-                                                15th</span><span><i class="fa fa-map-marker orange"></i>Grand Ballroom,
-                                                Oriental Hotel, Lagos.</span></div>
-                                    </div>
+                            </div>
 
-                                    <div class="col-md-12 text-center">
-                                        <div class="inline-block">
-                                            <div class="spacer-single"></div>
-                                            <div class="subtitle s3 mb20">Event Begins In</div>
-                                            <div id="defaultCountdown" class="countdown-s5"></div>
-                                            <div class="spacer-double"></div>
-                                            <div class="spacer-double"></div>
-                                        </div>
-                                    </div>
+                            <div class="col-md-12 text-center">
+                                <div class="inline-block">
+                                    <div class="spacer-single"></div>
+                                    <div class="subtitle s3 mb20">Event Begins In</div>
+                                    <div id="defaultCountdown" class="countdown-s5"></div>
+                                    <div class="spacer-double"></div>
+                                    <div class="spacer-double"></div>
                                 </div>
                             </div>
                         </div>
+                        <!-- </div> -->
+
                     </div>
                 </div>
+
             </section>
             <!-- section close -->
 
@@ -489,7 +520,10 @@
                                 <div class="wm-1"></div>
                                 <i class="icon-envelope id-color size40 mb20"></i>
                                 <h5>Email Us</h5>
-                                <h4>contact@invitex.com</h4>
+                                <h4><a href="mailto:dgifys.installation@gmail.com">dgifys.installation@gmail.com</a>
+                                </h4>
+                                <h4><a href="mailto:okechukwu@domainname.com">okechukwu@domainname.com</a></h4>
+
                             </div>
                         </div>
 
@@ -653,7 +687,7 @@
                             <a href="#"><i class="fa fa-facebook fa-lg"></i></a>
                             <a href="#"><i class="fa fa-twitter fa-lg"></i></a>
                             <a href="#"><i class="fa fa-linkedin fa-lg"></i></a>
-                          
+
                         </div>
                     </div>
                 </div>
@@ -698,46 +732,11 @@
     <script src="js/designesia.js"></script>
     <script src="js/validation.js"></script>
     <script src="js/modal.js"></script>
-    <!-- <script type="text/javascript" src="https://remitademo.net/payment/v1/remita-pay-inline.bundle.js"></script>
-    <script>         
-        function makePayment() {
-            var form = document.querySelector("#payment-form");
-            var paymentEngine = RmPaymentEngine.init({
-                key: 'QzAwMDAyNzEyNTl8MTEwNjE4NjF8OWZjOWYwNmMyZDk3MDRhYWM3YThiOThlNTNjZTE3ZjYxOTY5NDdmZWE1YzU3NDc0ZjE2ZDZjNTg1YWYxNWY3NWM4ZjMzNzZhNjNhZWZlOWQwNmJhNTFkMjIxYTRiMjYzZDkzNGQ3NTUxNDIxYWNlOGY4ZWEyODY3ZjlhNGUwYTY=',
-                transactionId: Math.floor(Math.random()*1101233), // Replace with a reference you generated or remove the entire field for us to auto-generate a reference for you. Note that you will be able to check the status of this transaction using this transaction Id
-                customerId: form.querySelector('input[name="email"]').value,
-                firstName: form.querySelector('input[name="firstName"]').value,
-                lastName: form.querySelector('input[name="lastName"]').value,
-                email: form.querySelector('input[name="email"]').value,
-                amount: form.querySelector('input[name="amount"]').value,
-                narration: form.querySelector('input[name="narration"]').value,
-                onSuccess: function (response) {
-                    console.log('callback Successful Response', response);
-                },
-                onError: function (response) {
-                    console.log('callback Error Response', response);
-                    
-                },
-                onClose: function () {
-                    console.log("closed");
-                }
-            });
-             paymentEngine.showPaymentWidget();
-        }
-       
-        window.onload = function () {
-            setDemoData();
-        };
-    </script> -->
-    <!-- <script src="js/payment.js"></script> -->
-    <!-- <script src="https://newwebpay.qa.interswitchng.com/inline-checkout.js"></script> -->
-    <!-- <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-        crossorigin="anonymous"></script> -->
+
     <script src="https://qa.interswitchng.com/collections/public/javascripts/inline-checkout.js"></script>
 
 
-    <!-- <script src="https://newwebpay.interswitchng.com/collections/w/pay"></script> -->
+
 </body>
 
 </html>
