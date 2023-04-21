@@ -208,6 +208,10 @@ button {
 	}
 }
 
+.mobile-menu{
+	display: none;
+}
+
 
 /* ================================================== */
 
@@ -7106,6 +7110,21 @@ a, img {
 	}
 }
 @media only screen and (max-width: 992px) {
+	.mobile-menu{
+		display: flex;
+		margin-top: 20px;
+		justify-content: space-around;
+		padding-inline-start: 0 !important;
+	}
+	header div#logo{
+		width: 50%;
+		display: flex;
+		float: none;
+		align-items: center;
+		justify-content: center;
+		margin: auto;
+		height: auto;
+	}
 	#preloader{
 		background: url(../images/logo-small.png) center no-repeat #222222 !important;
 	}
@@ -7741,11 +7760,14 @@ a, img {
 		width: 100%;
 
 	}
-	.header  div#logo{
-		width: 50% !important;
-	}
+
 	header div#logo{
-		width: 100%;
+		width: 50%;
+		display: flex;
+		float: none;
+		align-items: center;
+		justify-content: center;
+		margin: auto;
 		height: auto;
 	}
 	header div#logo img {
@@ -7778,7 +7800,12 @@ a, img {
 		width: 100%;
 	}
 	header div#logo{
-		width: 100%;
+		width: 30%;
+		float: none;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		margin: auto;
 		height: auto;
 	}
 	header div#logo img {
