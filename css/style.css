@@ -7116,6 +7116,9 @@ a, img {
 		justify-content: space-around;
 		padding-inline-start: 0 !important;
 	}
+	ul.mobile-menu {
+		list-style-type: none !important;
+	}
 	header div#logo{
 		width: 50%;
 		display: flex;
