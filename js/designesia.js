@@ -313,7 +313,7 @@
 		
 		jQuery("#owl-gallery").owlCarousel({
 			center: true,
-			items:4,
+			items:2,
 		});
 		
 		jQuery("#contact-carousel").owlCarousel({
