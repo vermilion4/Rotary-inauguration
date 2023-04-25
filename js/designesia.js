@@ -234,6 +234,7 @@
 			if (mx.matches) {
 				jQuery('.owl-slide-wrapper').find("img").css("height",$(window).innerHeight());
 				jQuery('.owl-slide-wrapper').find("img").css("width","100vw");
+				jQuery('.owl-slide-wrapper').find("img").css("min-height","100vh");
 			}else{
 				jQuery('.owl-slide-wrapper').find("img").css("width","100%");
 				jQuery('.owl-slide-wrapper').find("img").css("height","auto");
