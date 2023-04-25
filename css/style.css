@@ -222,6 +222,9 @@ button {
 	justify-content: space-evenly;
 	min-height: 80vh;
 }
+.phone-number{
+	color: #fff !important;
+}
 
 
 /* ================================================== */
