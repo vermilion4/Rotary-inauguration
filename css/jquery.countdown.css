@@ -5,7 +5,7 @@
 	#defaultCountdown .countdown-section {
 	font-family:"Montserrat";
 
-	font-size: 12px;
+	font-size: calc(12px + 1vw);
 	text-align: center;
 	width: fit-content;
 	display: inline-block;
