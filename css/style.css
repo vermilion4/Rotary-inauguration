@@ -137,7 +137,9 @@ overflow: hidden;
 	border-radius: 10px;
 
 }
-
+.desktop{
+	display:block;
+}
 button {
 	background: transparent;
 	color: #fff;
@@ -150,6 +152,7 @@ button {
 	position: relative;
 	transition: 0.2s ease-in-out;
 	letter-spacing: 2px;
+	background-color: #FFB200;
 }
 
 
@@ -157,7 +160,7 @@ button {
 	display: inline-block;
 	position: relative;
 	width: 300px;
-	height: 55px;
+	height: 75px;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -178,6 +181,7 @@ button {
   overflow: hidden;
   white-space: nowrap;
 	color: #fff !important;
+	font-weight: 700;
 }
 
 .button-typewriter .button__wrapper:hover a {
@@ -210,6 +214,13 @@ button {
 
 .mobile-menu{
 	display: none;
+}
+
+.hero-section{
+	display: flex;
+	align-items: center;
+	justify-content: space-evenly;
+	min-height: 85vh;
 }
 
 
@@ -7110,6 +7121,42 @@ a, img {
 	}
 }
 @media only screen and (max-width: 992px) {
+	button {
+		background: transparent;
+		color: #fff;
+		border: 3px solid #fff;
+		border-radius: 50px;
+		padding: 0.6rem 1.5rem;
+		font: 18px "Margarine", sans-serif;
+		outline: none;
+		cursor: pointer;
+		position: relative;
+		transition: 0.2s ease-in-out;
+		letter-spacing: 2px;
+		background-color: #FFB200;
+	}
+	
+	
+	.button__wrapper {
+		width: 250px;
+		height: 55px;
+	}
+	.hero-section{
+flex-direction: column;
+
+min-height: 100vh;
+	}
+	.desktop{
+		display: none;
+	}
+	h1.very-big {
+		font-size: calc(18px + 2vw) !important;
+	}
+
+	.governor-name{
+		font-size: 25px;
+		margin-bottom: 2rem;
+	}
 	.mobile-menu{
 		display: flex;
 		margin-top: 20px;
@@ -7121,11 +7168,7 @@ a, img {
 	}
 	header div#logo{
 		width: 50%;
-		display: flex;
-		float: none;
-		align-items: center;
-		justify-content: center;
-		margin: auto;
+		
 		height: auto;
 	}
 	#preloader{
@@ -7766,11 +7809,7 @@ a, img {
 
 	header div#logo{
 		width: 50%;
-		display: flex;
-		float: none;
-		align-items: center;
-		justify-content: center;
-		margin: auto;
+	
 		height: auto;
 	}
 	header div#logo img {
@@ -7804,11 +7843,7 @@ a, img {
 	}
 	header div#logo{
 		width: 50%;
-		float: none;
-		display: flex;
-		align-items: center;
-		justify-content: center;
-		margin: auto;
+	
 		height: auto;
 	}
 	header div#logo img {

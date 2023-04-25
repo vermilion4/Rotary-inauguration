@@ -233,7 +233,7 @@
 		var mx = window.matchMedia("(max-width: 992px)");
 			if (mx.matches) {
 				jQuery('.owl-slide-wrapper').find("img").css("height",$(window).innerHeight());
-				jQuery('.owl-slide-wrapper').find("img").css("width","auto");
+				jQuery('.owl-slide-wrapper').find("img").css("width","100vw");
 			}else{
 				jQuery('.owl-slide-wrapper').find("img").css("width","100%");
 				jQuery('.owl-slide-wrapper').find("img").css("height","auto");
