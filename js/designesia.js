@@ -312,8 +312,11 @@
 		});
 		
 		jQuery("#owl-gallery").owlCarousel({
-			center: true,
+	
 			items:2,
+			navigation: false,
+			pagination: false,
+			autoPlay: true,
 		});
 		
 		jQuery("#contact-carousel").owlCarousel({

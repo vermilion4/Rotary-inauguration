@@ -140,7 +140,7 @@ overflow: hidden;
 .desktop{
 	display:block;
 }
-button {
+.button__wrapper button {
 	background: transparent;
 	color: #fff;
 	border: 3px solid #fff;
@@ -4782,25 +4782,14 @@ a, a:hover, .test-column, .test-column:hover {
 	height: 100%;
 	overflow: hidden;
 	z-index:1;
-	
-		/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#8849e3+0,4991e3+100&0.5+0,0.5+100 */
-background: -moz-linear-gradient(45deg, rgba(136,73,227,0.5) 0%, rgba(73,145,227,0.5) 100%); /* FF3.6-15 */
-background: -webkit-linear-gradient(45deg, rgba(136,73,227,0.5) 0%,rgba(73,145,227,0.5) 100%); /* Chrome10-25,Safari5.1-6 */
-background: linear-gradient(45deg, rgba(136,73,227,0.5) 0%,rgba(73,145,227,0.5) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#808849e3', endColorstr='#804991e3',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
 
 }
 .picframe.s2:hover{
 	transform: scale(1.05);
 }
-.picframe.s2:hover .filter{
-	opacity:0;
-}
 
 .picframe.s2:hover img {
-  -webkit-filter: grayscale(0);
-  filter: none;
-  opacity:1;
+
   transform: scale(1.1);
 }
 
@@ -4875,12 +4864,6 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#808849e3', e
 	position: relative;
 	overflow: hidden;
 }
-.picframe.s2 img {
-  filter: gray; /* IE6-9 */
-  -webkit-filter: grayscale(1); /* Google Chrome, Safari 6+ & Opera 15+ */
-  filter: grayscale(1); /* Microsoft Edge and Firefox 35+ */
-}
-	
 
 #btn-close-x {
 	width: 100px;
@@ -6494,7 +6477,7 @@ a.read_more i {
 }
 
 .gallery-item{
-	margin:15px;
+	margin:10px;
 }
 
 .table {
@@ -7131,7 +7114,7 @@ a, img {
 	}
 }
 @media only screen and (max-width: 992px) {
-	button {
+	.button__wrapper button {
 		background: transparent;
 		color: #fff;
 		border: 3px solid #fff;

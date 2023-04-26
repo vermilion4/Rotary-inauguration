@@ -33,8 +33,9 @@
     <!-- Payment script -->
     <script type="text/javascript">
         //load isw payment page
-        function checkout ()
+        function checkout (ticketId)
         {
+            var amount = document.getElementById(ticketId).getAttribute('data-amount');
             var merchantCode = 'MX19329';
             var payItemId = 'Default_Payable_MX19329';
 
@@ -43,7 +44,7 @@
                 merchant_code: merchantCode,
                 pay_item_id: payItemId,
                 txn_ref: transRef,
-                amount: document.getElementsByName('amount')[0].value,
+                amount: amount,
                 cust_id: document.getElementsByName('cust_id')[0].value,
                 currency: document.getElementsByName('currency')[0].value,
                 site_redirect_url: window.location.origin,
@@ -230,6 +231,17 @@
             </section>
             <!-- section close -->
 
+   <!-- Hidden parameters containing interswitch merchant credentials -->
+   <input type="hidden" name='amount' />
+   <input type="hidden" name='currency' value="566" />
+   <input type="hidden" name='txn_ref' id="tranRef" />
+   <input type="hidden" name='cust_id' value="customer" />
+   <input type="hidden" name='merchant_code' />
+   <input type="hidden" name='pay_item_id' />
+   <input type="hidden" name='site_redirect_url' />
+   <input type="hidden" name='display_mode' value='PAGE' />
+   <!-- Hidden parameters end -->
+
             <!-- section begin -->
             <section id="section-tickets">
                 <div class="container">
@@ -257,10 +269,33 @@
                                                     <p class="price"><span class="currency">₦</span> <b>75,000</b></p>
                                                 </div>
                                                 <div class="bottom">
-
-                                                    <a style="cursor: pointer;" class="open-modal-btn"
-                                                        data-amount="7500000" class="btn-border">Register</a>
+                                                    <button id="ticket1"
+                                                    data-amount="7500000" style="border: 1px solid rgb(206, 206, 206);
+                                                    height: 40px;
+                                                    margin: 0;
+                                                    box-shadow: rgb(226, 224, 224) 0px 1px 3px;
+                                                    padding: 0 2em 0 0.8em;
+                                                    font-weight: 700;
+                                                    border-radius: 4px;
+                                                    color: rgb(0, 66, 95);
+                                                    font-size: 13px;
+                                                    text-transform: uppercase;
+                                                    background-color: #FFF;
+                                                    background-image: url(https://paymentgateway.interswitchgroup.com/paymentgateway/public/images/isw_paynow_btnbg.png);
+                                                    width: 260px;
+                                                    display: inline-block;
+                                                    box-sizing: border-box;
+                                                    cursor: pointer;
+                                                    font-family: 'proxima-nova', sans-serif, 'Helvetica';" onclick="checkout('ticket1')">
+                                                        <img style="float:left;" class="isw-pay-logo"
+                                                            src="https://paymentgateway.interswitchgroup.com/paymentgateway/public/images/isw_paynow_btn.png" />
+                                                        <span style="margin-top: 10px;display: inline-block;margin-left: 8px;">
+                                                            Pay now
+                                                        </span>
+                                                    </button>
+                                                
                                                 </div>
+                                                <div class="spacer-single"></div>
                                             </div>
                                         </div>
                                     </div>
@@ -276,9 +311,32 @@
                                                 </div>
                                                 <div class="bottom">
 
-                                                    <a style="cursor: pointer;" class="open-modal-btn"
-                                                        data-amount="75000000" class="btn-border">Register</a>
+                                                    <button id="ticket2"
+                                                    data-amount="75000000" style="border: 1px solid rgb(206, 206, 206);
+                                                    height: 40px;
+                                                    margin: 0;
+                                                    box-shadow: rgb(226, 224, 224) 0px 1px 3px;
+                                                    padding: 0 2em 0 0.8em;
+                                                    font-weight: 700;
+                                                    border-radius: 4px;
+                                                    color: rgb(0, 66, 95);
+                                                    font-size: 13px;
+                                                    text-transform: uppercase;
+                                                    background-color: #FFF;
+                                                    background-image: url(https://paymentgateway.interswitchgroup.com/paymentgateway/public/images/isw_paynow_btnbg.png);
+                                                    width: 260px;
+                                                    display: inline-block;
+                                                    box-sizing: border-box;
+                                                    cursor: pointer;
+                                                    font-family: 'proxima-nova', sans-serif, 'Helvetica';" onclick="checkout('ticket2')">
+                                                        <img style="float:left;" class="isw-pay-logo"
+                                                            src="https://paymentgateway.interswitchgroup.com/paymentgateway/public/images/isw_paynow_btn.png" />
+                                                        <span style="margin-top: 10px;display: inline-block;margin-left: 8px;">
+                                                            Pay now
+                                                        </span>
+                                                    </button>
                                                 </div>
+                                                <div class="spacer-single"></div>
                                             </div>
                                         </div>
                                     </div>
@@ -451,21 +509,16 @@
                             <h2 class="wow fadeInUp">Meet The Commitee</h2>
                             <div class="small-border wow fadeInUp" data-wow-delay=".2s"></div>
                         </div>
-                        <!-- <div class="col-md-6 col-md-offset-3 text-center">
-                            <p class="lead wow fadeInUp">Get to know our distinguished speakers who will be celebrating
-                                the induction of our 43rd District Governor.</p>
-                            <div class="spacer-single"></div>
-                        </div> -->
-
+                       
                         <div class="clearfix"></div>
 
-                        <div class="col-md-3 wow fadeIn">
+                        <div class="col-md-4 wow fadeIn">
                             <div class="profile_pic text-center sm-mb30">
                                 <figure class="picframe s2 mb30">
                                     <a class="simple-ajax-popup" href="team-details-1.html">
                                         <span class="filter"></span>
                                     </a>
-                                    <img src="images/team/5.jpeg" class="img-responsive" alt="">
+                                    <img src="images/team/5.jpg" class="img-responsive" alt="">
                                 </figure>
 
                                 <h3>PAG. Okechukwu UCHE-UKAH</h3>
@@ -474,7 +527,7 @@
                             </div>
                         </div>
 
-                        <div class="col-md-3 wow fadeIn" data-wow-delay=".2s">
+                        <div class="col-md-4 wow fadeIn" data-wow-delay=".2s">
                             <div class="profile_pic text-center sm-mb30">
                                 <figure class="picframe s2 mb30">
                                     <a class="simple-ajax-popup" href="team-details-2.html">
@@ -488,7 +541,7 @@
                             </div>
                         </div>
 
-                        <div class="col-md-3 wow fadeIn" data-wow-delay=".4s">
+                        <div class="col-md-4 wow fadeIn" data-wow-delay=".4s">
                             <div class="profile_pic text-center sm-mb30">
                                 <figure class="picframe s2 mb30">
                                     <a class="simple-ajax-popup" href="team-details-3.html">
@@ -506,83 +559,6 @@
                 </div>
             </section>
             <!-- section close -->
-
-
-
-            <div id="modal" class="modal">
-                <div class="col-md-8 order-md-1 form">
-                    <h2 class="mb-3">Billing Information</h4>
-
-                        <!-- Form containing POST parameters -->
-
-
-                        <!-- Hidden parameters containing interswitch merchant credentials -->
-                        <input type="hidden" name='amount' value="70000" />
-                        <input type="hidden" name='currency' value="566" />
-                        <input type="hidden" name='txn_ref' id="tranRef" />
-                        <input type="hidden" name='merchant_code' />
-                        <input type="hidden" name='pay_item_id' />
-                        <input type="hidden" name='site_redirect_url' />
-                        <input type="hidden" name='display_mode' value='PAGE' />
-                        <!-- Hidden parameters end -->
-
-
-                        <div class="mb-3">
-                            <label for="firstName">First name</label>
-                            <input name="" type="text" class="form-control" id="firstName" placeholder="" value=""
-                                required>
-                            <div class="invalid-feedback">
-                                Valid first name is required.
-                            </div>
-                        </div>
-                        <div class=" mb-3">
-                            <label for="lastName">Last name</label>
-                            <input name="" type="text" class="form-control" id="lastName" placeholder="" value=""
-                                required>
-                            <div class="invalid-feedback">
-                                Valid last name is required.
-                            </div>
-                        </div>
-
-                        <div class="mb-3">
-                            <label for="email">Email <span class="text-muted">(Optional)</span></label>
-                            <input name="cust_id" type="email" value="test@mail.com" class="form-control" id="email"
-                                placeholder="you@example.com">
-                            <div class="invalid-feedback">
-                                Please enter a valid email address.
-                            </div>
-                        </div>
-
-                        <hr class="mb-4">
-
-
-                        <button style="border: 1px solid rgb(206, 206, 206);
-                        height: 40px;
-                        margin: 0;
-                        box-shadow: rgb(226, 224, 224) 0px 1px 3px;
-                        padding: 0 2em 0 0.8em;
-                        font-weight: 700;
-                        border-radius: 4px;
-                        color: rgb(0, 66, 95);
-                        font-size: 13px;
-                        text-transform: uppercase;
-                        background-color: #FFF;
-                        background-image: url(https://paymentgateway.interswitchgroup.com/paymentgateway/public/images/isw_paynow_btnbg.png);
-                        width: 260px;
-                        display: inline-block;
-                        box-sizing: border-box;
-                        cursor: pointer;
-                        font-family: 'proxima-nova', sans-serif, 'Helvetica';" onclick="checkout()">
-                            <img style="float:left;" class="isw-pay-logo"
-                                src="https://paymentgateway.interswitchgroup.com/paymentgateway/public/images/isw_paynow_btn.png" />
-                            <span style="margin-top: 10px;display: inline-block;margin-left: 8px;">
-                                Pay with Interswitch
-                            </span>
-                        </button>
-
-
-                </div>
-            </div>
 
 
             <!-- section begin -->
@@ -660,6 +636,14 @@
                                     <img src="images/gallery/3.jpg" class="img-responsive" alt="">
                                 </figure>
                             </div>
+                            <div class="gallery-item text-center">
+                                <figure class="picframe s2 mb30">
+                                    <a class="image-popup" href="images/gallery/9.jpg">
+                                        <span class="filter"></span>
+                                    </a>
+                                    <img src="images/gallery/9.jpg" class="img-responsive" alt="">
+                                </figure>
+                            </div>
 
 
                         </div>
@@ -690,6 +674,9 @@
                                 <div class="col-md-12 text-center wow fadeInUp">
                                     <div class="owl-carousel owl-sponsors ">
                                         <div class="item"><img src="images/logo/1.png" alt=""></div>
+                                        <div class="item"><p>Women in Rotary</p></div>
+                                        <div class="item"><p>The Progenitor Legacy</p></div>
+                                        <div class="item"><p>21st Signature Technologies</p></div>
                                         <div class="item"><img src="images/logo/2.png" alt=""></div>
                                         <div class="item"><img src="images/logo/3.png" alt=""></div>
                                         <div class="item"><img src="images/logo/4.png" alt=""></div>
@@ -770,7 +757,6 @@
     <script src="js/map.js"></script>
     <script src="js/designesia.js"></script>
     <script src="js/validation.js"></script>
-    <script src="js/modal.js"></script>
 
     <script src="https://qa.interswitchng.com/collections/public/javascripts/inline-checkout.js"></script>
 
