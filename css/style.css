@@ -6708,7 +6708,7 @@ a.read_more i {
 @media (prefers-color-scheme: dark) {
 	.owl-sponsors .item {
 	
-		background-color: #fff;
+		background-color: #fff !important;
 		
 	}
 }
