@@ -6688,7 +6688,7 @@ a.read_more i {
 
 .owl-sponsors .item {
   margin: 10px;
-	background-color: #fff;
+	background-color: #fff !important;
 	border-radius: 5px;
 	display: grid;
 	place-content: center;
