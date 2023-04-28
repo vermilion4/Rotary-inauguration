@@ -6705,6 +6705,14 @@ a.read_more i {
   -webkit-border-radius: 5px;
 }
 
+@media (prefers-color-scheme: dark) {
+	.owl-sponsors .item {
+	
+		background-color: #fff;
+		
+	}
+}
+
 
 .gallery-item {
   margin: 10px;
