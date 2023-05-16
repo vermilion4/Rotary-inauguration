@@ -30,51 +30,6 @@
     <!-- background -->
     <link rel="stylesheet" href="css/bg.css" type="text/css">
 
-    <!-- Payment script -->
-    <script type="text/javascript">
-        //load isw payment page
-        function checkout (ticketId)
-        {
-            var amount = document.getElementById(ticketId).getAttribute('data-amount');
-            var merchantCode = 'MX19329';
-            var payItemId = 'Default_Payable_MX19329';
-
-            var transRef = randomReference();
-            var paymentRequest = {
-                merchant_code: merchantCode,
-                pay_item_id: payItemId,
-                txn_ref: transRef,
-                amount: amount,
-                cust_id: document.getElementsByName('cust_id')[0].value,
-                currency: document.getElementsByName('currency')[0].value,
-                site_redirect_url: window.location.origin,
-                onComplete: paymentCallback,
-                mode: 'TEST'
-            };
-            window.webpayCheckout(paymentRequest);
-        }
-
-        //generate a random transaction ref
-        function randomReference ()
-        {
-            var length = 10;
-            var chars = '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ';
-            var result = '';
-            for (var i = length; i > 0; --i) result += chars[Math.floor(Math.random() * chars.length)];
-            return result;
-        }
-
-        //callback function that gets triggered on payment success or failure
-        function paymentCallback (response)
-        {
-            if (response != null)
-            {
-                alert(response.desc);
-            }
-
-        }
-
-    </script>
 </head>
 
 <body id="homepage">
@@ -213,17 +168,6 @@
             </section>
             <!-- section close -->
 
-            <!-- Hidden parameters containing interswitch merchant credentials -->
-            <input type="hidden" name='amount' />
-            <input type="hidden" name='currency' value="566" />
-            <input type="hidden" name='txn_ref' id="tranRef" />
-            <input type="hidden" name='cust_id' value="customer" />
-            <input type="hidden" name='merchant_code' />
-            <input type="hidden" name='pay_item_id' />
-            <input type="hidden" name='site_redirect_url' />
-            <input type="hidden" name='display_mode' value='PAGE' />
-            <!-- Hidden parameters end -->
-
             <!-- section begin -->
             <section id="section-tickets">
                 <div class="container">
@@ -251,14 +195,16 @@
                                                     <p class="price"><span class="currency">₦</span> <b>75,000</b></p>
                                                 </div>
                                                 <div class="bottom">
-                                                    <button id="ticket1" class='interswitch-btn' data-amount="7500000"
-                                                        onclick="checkout('ticket1')">
+                                                    <button id="ticket1" class='interswitch-btn'
+                                                        >
+                                                        <a href="https://business.quickteller.com/link/pay/RotaryIgR34q" target="_blank">
                                                         <img width="20" height="30" style="float:left;" class="isw-pay-logo"
                                                             src="/images/logo/interswitch-icon.png" />
                                                         <span
                                                             style="margin-top: 5px;display: inline-block;margin-left: 8px;">
                                                             Pay now
                                                         </span>
+                                                    </a>
                                                     </button>
 
                                                 </div>
@@ -278,14 +224,16 @@
                                                 </div>
                                                 <div class="bottom">
 
-                                                    <button id="ticket2" data-amount="75000000" class='interswitch-btn'
-                                                        onclick="checkout('ticket2')">
+                                                    <button id="ticket2" class='interswitch-btn'
+                                                        >
+                                                        <a href="https://business.quickteller.com/link/pay/RotaryICW1ZU" target="_blank">
                                                         <img width="20" height="30" style="float:left;" class="isw-pay-logo"
                                                         src="/images/logo/interswitch-icon.png" />
                                                         <span
                                                             style="margin-top: 5px;display: inline-block;margin-left: 8px;">
                                                             Pay now
                                                         </span>
+                                                    </a>
                                                     </button>
                                                 </div>
                                                 <div class="spacer-single"></div>
@@ -438,7 +386,7 @@
 
                         <div class="clearfix"></div>
 
-                        <div class="col-md-4 wow fadeIn">
+                        <div class="col-md-3 wow fadeIn">
                             <div class="profile_pic text-center sm-mb30">
                                 <figure class="picframe s2 mb30">
                                     <a class="simple-ajax-popup" href="team-details-1.html">
@@ -453,7 +401,7 @@
                             </div>
                         </div>
 
-                        <div class="col-md-4 wow fadeIn" data-wow-delay=".2s">
+                        <div class="col-md-3 wow fadeIn" data-wow-delay=".2s">
                             <div class="profile_pic text-center sm-mb30">
                                 <figure class="picframe s2 mb30">
                                     <a class="simple-ajax-popup" href="team-details-2.html">
@@ -467,7 +415,7 @@
                             </div>
                         </div>
 
-                        <div class="col-md-4 wow fadeIn" data-wow-delay=".4s">
+                        <div class="col-md-3 wow fadeIn" data-wow-delay=".4s">
                             <div class="profile_pic text-center sm-mb30">
                                 <figure class="picframe s2 mb30">
                                     <a class="simple-ajax-popup" href="team-details-3.html">
@@ -478,6 +426,20 @@
 
                                 <h3>PP. Wale Agbeyangi</h3>
                                 <span class="subtitle">Vice Chairman</span>
+                            </div>
+                        </div>
+
+                        <div class="col-md-3 wow fadeIn" data-wow-delay=".4s">
+                            <div class="profile_pic text-center sm-mb30">
+                                <figure class="picframe s2 mb30">
+                                    <a class="simple-ajax-popup" href="team-details-5.html">
+                                        <span class="filter"></span>
+                                    </a>
+                                    <img src="images/team/arinze2.jpeg" class="img-responsive" alt="">
+                                </figure>
+
+                                <h3>Rotn. Arinze Okamelu</h3>
+                                <span class="subtitle">Secretary</span>
                             </div>
                         </div>
 
@@ -695,9 +657,6 @@
     <script src="js/map.js"></script>
     <script src="js/designesia.js"></script>
     <script src="js/validation.js"></script>
-
-    <script src="https://qa.interswitchng.com/collections/public/javascripts/inline-checkout.js"></script>
-
 
 
 </body>
