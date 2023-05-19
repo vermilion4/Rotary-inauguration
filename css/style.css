@@ -87,6 +87,12 @@ body {
   display: none;
   color: #fff;
 }
+::-webkit-scrollbar{
+  width: 5px;
+}
+::-webkit-scrollbar-thumb{
+  background-color: #f7c51e;
+}
 body.boxed {
   margin: 30px;
   overflow: hidden !important;
@@ -8122,4 +8128,18 @@ img {
 
 #ifrm {
   display: none;
+}
+
+.view-profile{
+  background-color: #fff;
+  color: #000;
+  border: none;
+  padding: 1rem 3rem;
+  border-radius: 8px;
+  font-size: 20px;
+}
+.view-profile:hover{
+  background-color: #000;
+  color:#fff;
+  border: 1px solid #fff;
 }

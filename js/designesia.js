@@ -378,7 +378,7 @@
 			items: 5,
 			navigation: false,
 			pagination: false,
-			autoPlay: true,
+			autoPlay: 1000,
 		});
 
 		
