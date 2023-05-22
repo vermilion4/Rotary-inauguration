@@ -160,8 +160,8 @@ body.boxed {
   font-family: 'proxima-nova', sans-serif, 'Helvetica';
 }
 
-.interswitch-btn:hover{
-	color: #fff;
+.interswitch-btn:hover, .interswitch-btn a:hover{
+	color: #fff !important;
 	background-color: rgb(0, 66, 95);
 }
 .button__wrapper button {
@@ -3075,11 +3075,11 @@ span.teaser {
 	background: rgba(255,255,255,.2);
 }*/
 .pricing-s1 .bottom > a {
-  display: block;
-  margin: 40px;
+  /* display: block; */
+  /* margin: 40px;
   width: auto;
   background-color: #fff;
-  padding: 10px 0;
+  padding: 10px 0; */
 }
 .pricing-s1 .bottom i {
   margin-right: 10px;
