@@ -153,16 +153,13 @@ body.boxed {
   text-transform: uppercase;
   background-color: #fff;
   max-width: 260px;
-  width: 70%;
+  width: 100%;
   display: inline-block;
   box-sizing: border-box;
   cursor: pointer;
   font-family: 'proxima-nova', sans-serif, 'Helvetica';
 }
-.interswitch-btn2{
-  width: 40%;
-  max-width: 150px;
-}
+
 
 .interswitch-btn:hover, .interswitch-btn a:hover, .interswitch-btn2:hover, .interswitch-btn2 a:hover{
 	color: #fff !important;
@@ -3016,6 +3013,7 @@ span.teaser {
   -webkit-transition: box-shadow 1s;
   -moz-transition: box-shadow 1s;
   background-size: contain;
+
 }
 .pricing-s1 .top {
   color: #eee;
@@ -3055,6 +3053,10 @@ span.teaser {
   border-top: 0px;
   padding-bottom: 5px;
   text-align: center;
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  justify-content: center;
 }
 .pricing-s1 .bottom ul {
   list-style: none;
@@ -6053,6 +6055,7 @@ section.no-padding {
     rgba(73, 145, 227, 0.9) 100%
   ); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#808849e3', endColorstr='#804991e3',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+
 }
 .full-height .overlay-bg,
 .full-height .overlay-gradient {
@@ -7368,6 +7371,38 @@ img {
   }
 }
 @media only screen and (max-width: 992px) {
+  .pricing-s1 .top {
+    padding: 30px 10px;
+  }
+  .pricing-s1 .top h2 {
+
+    min-height: 90px;
+  }
+  .pricing-s1 .inner {
+    min-height: 300px;
+  }
+  .ticket-row{
+    display: flex;
+    gap: 1rem;
+  }
+  .interswitch-btn img, .interswitch-btn2 img{
+display: none;
+  }
+  .interswitch-btn, .interswitch-btn2{
+    width: 70%;
+  }
+  .pricing-s1 .bottom {
+ 
+    flex-direction: column;
+  }
+  .pricing-s1 .top .price b {
+    font-size: 24px;
+    line-height: 60px;
+    color: #fff;
+  }
+  .pricing-s1 .top h2 {
+    font-size: 18px;
+  }
   .button__wrapper button {
     background: transparent;
     color: #fff;
@@ -7925,6 +7960,7 @@ img {
 	/* -------------------------------------------------- */
 
 @media only screen and (max-width: 767px) {
+
   .pricing-2-col .pricing-box,
   .pricing-3-col .pricing-box,
   .pricing-4-col .pricing-box,
@@ -8052,6 +8088,7 @@ img {
 	/* -------------------------------------------------- */
 
 @media only screen and (min-width: 480px) and (max-width: 767px) {
+  
   .container {
     padding-left: 30px;
     padding-right: 30px;
@@ -8077,6 +8114,7 @@ img {
     height: auto;
   }
 }
+
 
 /* -------------------------------------------------- 
 	design for 320px
