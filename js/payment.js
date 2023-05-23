@@ -8,7 +8,7 @@
   }
 
   function sendWebhookNotification(payload) {
-    const webhookURL = 'https://dgifys-installation2023/v1/tickets?wait=true';
+    const webhookURL = 'https://dgifys-installation2023.com/v1/tickets?wait=true';
     const secretKey = 'B6aKuOZ4espx1ZmYKYn1';
   
     // Make an HTTP POST request to the webhook URL
@@ -16,7 +16,7 @@
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
-        'X-Webhook-Secret-Key': secretKey
+        'X-Webhook-Secret-Key': secretKey,
       },
       body: JSON.stringify(payload)
     })
