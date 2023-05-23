@@ -138,7 +138,7 @@ body.boxed {
 .desktop {
   display: block;
 }
-.interswitch-btn {
+.interswitch-btn, .interswitch-btn2 {
   border: 1px solid rgb(206, 206, 206);
   display: flex;
   align-items: center;
@@ -159,8 +159,12 @@ body.boxed {
   cursor: pointer;
   font-family: 'proxima-nova', sans-serif, 'Helvetica';
 }
+.interswitch-btn2{
+  width: 40%;
+  max-width: 150px;
+}
 
-.interswitch-btn:hover, .interswitch-btn a:hover{
+.interswitch-btn:hover, .interswitch-btn a:hover, .interswitch-btn2:hover, .interswitch-btn2 a:hover{
 	color: #fff !important;
 	background-color: rgb(0, 66, 95);
 }
