@@ -313,7 +313,7 @@
 		
 		jQuery("#owl-gallery").owlCarousel({
 	
-			items:2,
+			items:3,
 			navigation: false,
 			pagination: false,
 			autoPlay: 1000,
