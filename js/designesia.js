@@ -316,7 +316,7 @@
 			items:2,
 			navigation: false,
 			pagination: false,
-			autoPlay: true,
+			autoPlay: 1000,
 		});
 		
 		jQuery("#contact-carousel").owlCarousel({
