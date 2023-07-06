@@ -272,28 +272,31 @@ body.boxed {
   width: 100px;
   height: 50px;
   border-radius: 5px;
-  background-color: #292a2c;
-  color: white;
+  color: #292a2c;
+  background-color: white;
   font-weight: bold;
   text-align: center;
   line-height: 50px;
   cursor: pointer;
+  z-index: 10;
 }
 
 .btn-unveil:hover{
-  background-color: #fff;
-  color: #1f1f1f;
+  color: #fff;
+  background-color: #1f1f1f;
   transform: scale(1.1);
   transition: all 0.3s ease-in-out;
 }
 
 .image-container {
-  display: none;
+  background: url('../images/gallery/curtain.jpg');
   width: 100%;
   height: 100%;
+  background-position: center;
 }
 
 .image-container img {
+  display: none;
   width: 100%;
   height: 100%;
   object-fit: cover;
