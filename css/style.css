@@ -306,6 +306,57 @@ align-items: center;
   object-fit: cover;
 }
 
+/* MASONRY */
+.masonry {
+	column-count: 4;
+	column-gap: 16px;
+}
+
+.masonry-page {
+  display: none;
+}
+
+.masonry-page.active {
+  display: block;
+}
+.pagination button{
+  padding: 1rem 2rem;
+  border: none;
+}
+.pagination button.active {
+  background-color: #ffb200;
+  color: #fff;
+}
+
+.masonry .mItem {
+  display: inline-block;
+  margin-bottom: 16px;
+  width: 100%;
+}
+
+.masonry .mItem img{
+  width: 100%;
+}
+
+@media (max-width: 1199px) {
+  .masonry {
+    column-count: 3;
+  }
+}
+
+@media (max-width: 991px) {
+  .masonry {
+    column-count: 2;
+  }
+}
+
+@media (max-width: 767px) {
+  .masonry {
+    column-count: 1;
+  }
+}
+
+
 /* ================================================== */
 
 /*  header	*/
