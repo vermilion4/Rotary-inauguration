@@ -7542,20 +7542,24 @@ display: none;
   }
   .hero-section {
     flex-direction: column;
-
+padding: 10rem 0;
     min-height: 100vh;
+  }
+  .hero-section .col-md-6{
+    text-align: center;
   }
   .desktop {
     display: none;
   }
-  h1.very-big {
+  h1.very-big, .governor-name {
     font-size: calc(18px + 2vw) !important;
+    line-height: 45px;
   }
 
-  .governor-name {
+  /* .governor-name {
     font-size: 25px;
     margin-bottom: 2rem;
-  }
+  } */
   .mobile-menu {
     display: flex;
     margin-top: 20px;
