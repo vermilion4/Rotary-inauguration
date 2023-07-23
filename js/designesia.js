@@ -1234,5 +1234,5 @@
  * --------------------------------------------------*/
 jQuery(window).on('load', function() {
 	filter_gallery();		
-	jQuery('#preloader').delay(500).fadeOut(500);
+	jQuery('#preloader').delay(3000).fadeOut(500);
 });
