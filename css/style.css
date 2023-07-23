@@ -7581,12 +7581,12 @@ padding: 10rem 0;
     width: 50%;
 
     height: auto;
-  }
+  /* }
   #preloader {
 
-    /* background: url(../images/logo-small.png) center no-repeat #222222 !important; */
+    background: url(../images/logo-small.png) center no-repeat #222222 !important;
     background: url(../images/appreciation.jpeg) center no-repeat #222222 !important;
-  }
+  } */
   .modal .form {
     width: 90%;
   }
